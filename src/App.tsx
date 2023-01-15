@@ -7,6 +7,17 @@ const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
+  const current = new Date();
+
+  const time = current.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  const date = new Date().toLocaleString("en-US", {
+    weekday: "long",
+    day: "numeric",
+  });
+
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     setTask(event.target.value);
   };
@@ -20,6 +31,7 @@ const App: FC = () => {
     }
     setTask("");
   };
+
   const completeTask = (taskNameToDelete: string): void => {
     setTodoList(
       todoList.filter((task) => {
@@ -27,9 +39,13 @@ const App: FC = () => {
       })
     );
   };
+
   return (
     <div className="App">
-      <div className="header"></div>
+      <div className="header">
+        <span>{date}</span>
+        <span>{time}</span>
+      </div>
       <div className="toDoList">
         <input
           type="text"
@@ -38,7 +54,6 @@ const App: FC = () => {
           onChange={handleChange}
           value={task}
         />
-
         <button onClick={addTask}>Add Task</button>
       </div>
       <div className="todoList">
