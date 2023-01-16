@@ -11,10 +11,10 @@ export default function Header() {
 
   return (
     <div className={style.header}>
-      <div className={style.date_time}>
+      <>
         <span className={style.date}>{date}</span>
         <span className={style.time}>{time}</span>
-      </div>
+      </>
     </div>
   );
 }

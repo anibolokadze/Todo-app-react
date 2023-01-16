@@ -1,6 +1,6 @@
 import React from "react";
 import { ITask } from "../../Interfaces";
-
+import style from "../AddTask/AddTask.module.scss";
 export default function AddTask({
   task,
   setTodoList,
@@ -21,5 +21,9 @@ export default function AddTask({
     }
     setTask("");
   };
-  return <button onClick={addTask}>Add Task</button>;
+  return (
+    <button onClick={addTask} className={style.addTask}>
+      +
+    </button>
+  );
 }

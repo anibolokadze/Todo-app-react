@@ -17,3 +17,8 @@
   width: 100%;
   background-color: white;
 }
+.flex-input {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
