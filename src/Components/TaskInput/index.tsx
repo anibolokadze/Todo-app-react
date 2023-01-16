@@ -19,7 +19,7 @@ export default function TaskInput({
       ></button>
       <input
         type="text"
-        placeholder="Task..."
+        placeholder="Note"
         name="task"
         onChange={handleChange}
         value={task}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ITask } from "../../Interfaces";
 import TodoTask from "../TodoTask";
-
+import style from "./TaskList.module.scss";
 export default function TaskList({
   setTodoList,
   todoList,
@@ -19,7 +19,7 @@ export default function TaskList({
     );
   };
   return (
-    <div>
+    <div className={style.taskList}>
       {todoList.map((task: ITask, key: number) => {
         return <TodoTask key={key} task={task} completeTask={completeTask} />;
       })}

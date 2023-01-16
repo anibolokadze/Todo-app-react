@@ -15,17 +15,25 @@ const App: FC = () => {
       <div className="content">
         <Header />
 
-        <div className="flex-input">
-          <TaskInput setTask={setTask} task={task} />
-          <AddTask
-            task={task}
-            setTodoList={setTodoList}
-            todoList={todoList}
-            setTask={setTask}
-          />
-        </div>
+        <div className="padding">
+          <div className="flex-input">
+            <TaskInput setTask={setTask} task={task} />
+            <AddTask
+              task={task}
+              setTodoList={setTodoList}
+              todoList={todoList}
+              setTask={setTask}
+            />
+          </div>
 
-        <TaskList todoList={todoList} setTodoList={setTodoList} task={task} />
+          <div>
+            <TaskList
+              todoList={todoList}
+              setTodoList={setTodoList}
+              task={task}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
