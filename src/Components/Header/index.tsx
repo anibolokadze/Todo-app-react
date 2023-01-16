@@ -1,17 +1,20 @@
+import style from "../Header/Header.module.scss";
 export default function Header() {
   const time = new Date().toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
   });
   const date = new Date().toLocaleString("en-US", {
-    weekday: "long",
+    weekday: "short",
     day: "numeric",
   });
 
   return (
-    <>
-      <span>{date}</span>
-      <span>{time}</span>
-    </>
+    <div className={style.header}>
+      <div className={style.date_time}>
+        <span className={style.date}>{date}</span>
+        <span className={style.time}>{time}</span>
+      </div>
+    </div>
   );
 }

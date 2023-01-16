@@ -11,17 +11,19 @@ const App: FC = () => {
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
   return (
-    <>
-      <Header />
-      <TaskInput setTask={setTask} task={task} />
-      <AddTask
-        task={task}
-        setTodoList={setTodoList}
-        todoList={todoList}
-        setTask={setTask}
-      />
-      <TaskList todoList={todoList} setTodoList={setTodoList} task={task} />
-    </>
+    <div className="container">
+      <div className="content">
+        <Header />
+        <TaskInput setTask={setTask} task={task} />
+        <AddTask
+          task={task}
+          setTodoList={setTodoList}
+          todoList={todoList}
+          setTask={setTask}
+        />
+        <TaskList todoList={todoList} setTodoList={setTodoList} task={task} />
+      </div>
+    </div>
   );
 };
 
