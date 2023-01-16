@@ -15,19 +15,21 @@ const TodoTask = ({ task, completeTask }: Props) => {
   return (
     <div className={style.task}>
       <>
-        <div className="context">
+        <div>
           <h1>{task.taskName}</h1>
           <p>Today at {addedTime}</p>
         </div>
       </>
-      <button
-        onClick={() => {
-          completeTask(task.taskName);
-        }}
-      >
-        <button className={style.button}></button>
-        <img src={deleteIcon} />
-      </button>
+      <div className={style.centered}>
+        <input type="checkbox" className={style.checkbox} />
+        <button
+          onClick={() => {
+            completeTask(task.taskName);
+          }}
+        >
+          <img src={deleteIcon} />
+        </button>
+      </div>
     </div>
   );
 };

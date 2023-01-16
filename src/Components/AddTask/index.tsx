@@ -12,8 +12,8 @@ export default function AddTask({
   todoList: ITask[];
   setTask: React.Dispatch<React.SetStateAction<string>>;
 }) {
+  const newTask = { taskName: task };
   const addTask = (): void => {
-    const newTask = { taskName: task };
     if (newTask.taskName === "") {
       return;
     } else {

@@ -2,16 +2,33 @@
   max-width: 345px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 16px;
   margin-bottom: 24px;
 }
 button {
   all: unset;
 }
-.button {
-  border: 2px solid #20eeb0; /* Green */
-  border-radius: 50%;
+.checkbox {
   width: 20px;
   height: 20px;
   margin: 0 16px 0 16px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #20eeb0;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox:checked {
+  background: url("../../assets/done.icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #20eeb0;
+}
+.centered {
+  display: flex;
+  align-items: center;
 }

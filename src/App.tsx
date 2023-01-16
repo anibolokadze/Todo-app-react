@@ -12,7 +12,7 @@ const App: FC = () => {
 
   return (
     <div className="container">
-      <div className="content">
+      <div className="content-wrapper">
         <Header />
 
         <div className="padding">

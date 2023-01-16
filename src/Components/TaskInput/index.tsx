@@ -13,10 +13,7 @@ export default function TaskInput({
 
   return (
     <form>
-      <button
-        className={style.button}
-        onClick={(e) => e.preventDefault()}
-      ></button>
+      <input type="checkbox" className={style.checkbox} />
       <input
         type="text"
         placeholder="Note"
