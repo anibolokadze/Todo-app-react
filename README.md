@@ -12,5 +12,5 @@ Your users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-🌎 Live site URL: https://todo-app-anibolokadze.vercel.app/
+🌎 Live site URL: https://todo-app-anibolokadze.vercel.app/ <br>
 👩‍💻 LinkedIn: https://www.linkedin.com/in/ani-bolokadze-34b872252/
