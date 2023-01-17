@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ITask } from "../../Interfaces";
 import style from "../TodoTask/TodoTask.module.scss";
 import deleteIcon from "../../assets/delete.icon.svg";
+
 interface Props {
   task: ITask;
   completeTask(taskNameToDelete: string): void;

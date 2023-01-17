@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 import style from "../TaskInput/TaskInput.module.scss";
 export default function TaskInput({
   setTask,
@@ -12,15 +12,16 @@ export default function TaskInput({
   };
 
   return (
-    <form>
-      <input type="checkbox" className={style.checkbox} />
-      <input
-        type="text"
-        placeholder="Note"
-        name="task"
-        onChange={handleChange}
-        value={task}
-      />
-    </form>
+    <>
+      <form>
+        <input
+          className={style.input}
+          type="text"
+          placeholder="Note"
+          onChange={handleChange}
+          value={task}
+        />
+      </form>
+    </>
   );
 }

@@ -21,6 +21,7 @@ export default function AddTask({
     }
     setTask("");
   };
+
   return (
     <button onClick={addTask} className={style.addTask}>
       +

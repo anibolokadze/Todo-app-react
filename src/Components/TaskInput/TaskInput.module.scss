@@ -1,22 +1,3 @@
-.checkbox {
-  width: 20px;
-  height: 20px;
-  margin: 0 16px 0 16px;
-  background-color: white;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 2px solid #20eeb0;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-.checkbox:checked {
-  background: url("../../assets/done.icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #20eeb0;
-}
 form {
   display: flex;
   align-items: center;
@@ -24,9 +5,8 @@ form {
   height: 50px;
   color: #888888;
   input {
-    border: none;
-  }
-  input:focus {
-    outline: none;
+    max-width: 275px;
+    height: 50px;
+    margin-left: 16px;
   }
 }

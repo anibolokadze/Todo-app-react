@@ -36,3 +36,9 @@ p {
 button:hover {
   cursor: pointer;
 }
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}

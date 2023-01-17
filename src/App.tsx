@@ -11,10 +11,9 @@ const App: FC = () => {
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
   return (
-    <div className="container">
+    <div className="container" id="light">
       <div className="content-wrapper">
         <Header />
-
         <div className="padding">
           <div className="flex-input">
             <TaskInput setTask={setTask} task={task} />
@@ -25,7 +24,6 @@ const App: FC = () => {
               setTask={setTask}
             />
           </div>
-
           <div>
             <TaskList
               todoList={todoList}
